@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template_string, redirect, url_for
-from pyngrok import ngrok
+#from pyngrok import ngrok
 import yfinance as yf
 import pandas as pd
 
@@ -318,8 +318,8 @@ def main_page():
     return render_template_string(HTML_TEMPLATE)
 
 # Start Flask server with ngrok
-public_url = ngrok.connect(5000).public_url
-print(f"Public URL: {public_url}")
+#public_url = ngrok.connect(5000).public_url
+#print(f"Public URL: {public_url}")
 
 if __name__ == '__main__':
     app.run(port=5000)
